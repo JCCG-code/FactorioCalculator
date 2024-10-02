@@ -1,12 +1,19 @@
 <template>
-  <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <main class="app-main-wrap">
+    <nav>
+      <RouterLink to="/">Home</RouterLink>
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
 
-  <RouterView />
+    <RouterView />
+  </main>
 </template>
 
-<style scoped>
+<script setup lang="ts"></script>
 
+<style scoped lang="scss">
+.app-main-wrap {
+  min-width: 100vw;
+  min-height: 100vh;
+}
 </style>
